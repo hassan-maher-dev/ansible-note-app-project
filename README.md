@@ -90,15 +90,12 @@ Once the playbook finishes successfully, open your browser and visit:
 
 http://<WEB-SERVER-IP>
 
-📸 Screenshots
-(Place a screenshot of your running application here)
-
-Example: A simple note-taking interface showing timestamped entries.
-
 👨‍💻 Author
 Hassan Maher
 
 Role: Electronics & Communications Engineering Student
 
 Program: DEBI Scholarship (DevOps Track)
+
+GitHub : https://github.com/hassan-maher-dev
 
