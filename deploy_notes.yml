@@ -1,0 +1,22 @@
+
+- name: Deploy Note App on Web Server
+  hosts: web
+  become: yes
+  roles:
+    - note_app_role
+
+
+- name: Setup Backup Strategy on DB Server
+  hosts: db
+  become: yes
+  tasks:
+    - name: Create Backup Directory
+      file:
+        path: /var/backups/notes_app
+        state: directory
+        mode: '0755'
+
+    - name: Install rsync (for syncing files)
+      yum:
+        name: rsync
+        state: present
